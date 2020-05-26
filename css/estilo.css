@@ -1,0 +1,333 @@
+   /* Formatação Geral   */
+   body{
+   	font-family: Pacifico, cursive;
+
+
+   
+  } 
+
+  h1,h2,h3{ 
+  	margin: 0;
+  	font-family: Pacifico, cursive;
+  	font-weight: 700;
+
+
+  }
+
+  p{
+  	font-family: Pacifico, cursive;
+
+  }
+  .container{
+    width: 100%
+
+
+  }
+  /* Cabeçalho ou barra de navegação  */
+
+  .logo img{
+  	border-radius: 400%;
+
+
+  }
+
+  nav{
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	background-color: #006400;
+  	padding: 30px;
+
+  }
+
+  nav ul{
+  	list-style: none;
+  	padding: 0;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	width: 100%;
+
+
+
+  }
+
+
+  nav ul li{
+  	text-align: center;
+  	width: 100%;
+  	font-size: 1.5em;
+  	padding: 2%;
+
+
+
+  }
+
+
+  nav ul li a{
+  	display: inline-block;
+  	padding: 10px 0;
+  	width: 100%;
+  	text-decoration: none;
+  	color: #fff;
+
+
+
+
+  }
+
+  /* Header */
+  header {
+    background-image: url('../img/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+
+
+  }
+  /* Sobre */
+
+  #Sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #006400;
+    color: #fff;
+     
+
+
+
+
+
+  }
+
+  #Sobre h2{
+    margin-top: 20px;
+    font-size: 2em;
+
+
+  }
+
+  .foto img{
+    width: 60%
+    
+
+
+  }
+
+  .foto{
+    float: left;
+    width: 50%
+  }
+
+  .texto{
+    float: right;
+    width: 50%;
+  }
+  /*
+  Especialidades
+  */
+
+  #Especialidades {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 0  auto;
+  }
+
+  #Especialidades div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  #Especialidades p{
+    line-height: 1.5;
+    margin: 2vh;
+    font-size: 1.2em;
+
+  }
+  #Especialidades img{
+    margin: 10px 0;
+  }
+
+  #Especialidades h2{
+    font-size: 2em;
+  }
+  /*
+  competencias
+  */
+
+  #Competencias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #Competencias h2{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 2em;
+    text-align: center;
+  }
+  #Competencias h3,p {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 1em;
+    text-align: center;
+  }
+  #Competencias p{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 1em;
+    text-align: center;
+  }
+  #Competencias a{
+    text-decoration: none;
+  }
+  #Competencias img{
+    width: 40%;
+    margin-bottom: 0;
+  }
+  #Competencias .comp p{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 20%;
+    margin-top: 0;
+    font-family: "Gochi Hand", "Helvetica", "Arial", sans-serif;
+    padding-right: 15px;
+    padding-left: 15px;
+    line-height: 1.5;
+  }
+
+
+
+
+  @media screen and (min-width: 768px){
+  	/* Cabeçalho ou barra de navegação */
+  	nav{
+  		flex-direction: row;
+  		justify-content: space-around;
+
+
+
+  	}
+
+    header p{
+      margin-bottom: 2em;
+      font-size: 1.7em;
+
+
+    }
+
+    /* Cabeçalho ou barra de navegação  */
+
+    .botao{
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 30px;
+      background-color: #006400;
+      font-size: .9em;
+      border-radius: 10%;
+
+
+    }
+
+  	nav ul{
+  		flex-direction: row;
+  		width: 70%;
+
+
+
+  	}
+
+    /* Header */
+    header{
+      height: 600px;
+      height: 60vh;
+      justify-content: center;
+
+
+    } 
+
+    /*
+        SOBRE
+        */
+
+        #Sobre {
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-items: flex-start;
+          height: 90vh;
+          justify-content: center;
+          min-height: 80vh;
+        }
+        #Sobre h2{
+          text-align: center;
+          width: 100%;
+        }
+
+        #Sobre div {
+          flex-grow: 1;
+          flex-basis: 300px;
+          padding: 0 10px;
+        }
+
+        /*
+        Especialidades
+        */
+        #Especialidades {
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-items: flex-start;
+          max-width: 1000px;
+          margin: 0 auto;
+        }
+        #Especialidades h2{
+          text-align: center;
+          width: 100%;
+        }
+        #Especialidades div{
+          flex-grow: 1;
+          flex-basis: 150px;
+          padding: 0 10px;
+        }
+         /*
+  competencias
+  */
+
+  #Competencias {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #Competencias h2,h3{
+    width: 100%;
+    text-align:center;
+  }
+  #Competencias .comp{
+    width: 33.3333333333%;
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
+  }
